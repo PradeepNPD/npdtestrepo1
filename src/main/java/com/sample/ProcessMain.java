@@ -32,6 +32,7 @@ public class ProcessMain {
 		ksession.startProcess("com.sample.bpmn.hello");
 
 		// let john execute Task 1
+		// Test Pradeep
 		List<TaskSummary> list = taskService.getTasksAssignedAsPotentialOwner("john", "en-UK");
 		TaskSummary task = list.get(0);
 		System.out.println("John is executing task " + task.getName());
